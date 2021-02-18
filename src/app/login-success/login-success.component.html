@@ -1,0 +1,46 @@
+<div class="d-flex flex-row header">
+    <div class=" img1">
+        <img src="assets/Your Profile_files/new.jpg" alt="" srcset="">
+    </div>
+    <div class="flex-grow-1 bd-highlight msg">
+        <div class="top" style="font-size: 25px;">Friendly Greeting !!</div>
+        <div class="top" style="font-size: 25px;"> Rahul K Gupta</div>
+    </div>
+    <div>
+        <button (click)="showapp()" type="button" class="btn btn-danger msg1">Logout</button>
+    </div>
+</div>
+
+<div class="main-container d-flex flex-row">
+    <div class="sidebar">
+        <div class="imgdiv">
+            <img src="assets/Your Profile_files/new.jpg" alt="">
+        </div>
+        <div class="top1" style="font-size: 30px; width: 100%;"> Rahul K Gupta</div>
+        <div class="top2">
+            <span><img src="https://i.pinimg.com/originals/f7/e0/45/f7e04570aedfd8a78f8e49e2eaded974.png" alt="" style="height: 20px;" srcset=""> Birginj,Nepal</span>
+        </div>
+        <br>
+        <br>
+        <div class="about" style="color: rgb(73, 69, 69); margin-left: 20px;">
+            <div style="font-size: 20px;">ABOUT</div>
+            <div>B.tech from Haldia Institute of Technology.</div>
+            <div>Work Experience of 4 years.</div>
+        </div>
+        <br>
+        <br>
+        <div class="connect" style="color: rgb(73, 69, 69); margin-left: 20px; font-size: 20px;">
+            <div>CONNECT</div>
+            <span><i class="ri-facebook-box-line"></i></span>
+        </div>
+    </div>
+    <div class="content">
+            <ul class="nav navbar">
+                <li><a routerLink="content">Home</a></li>
+                <li><a routerLink="student-list">Student-List</a></li>
+                <li><a>Courses</a></li>
+                <li><a style="margin-right: 80px;">About</a></li>
+            </ul>
+        <router-outlet></router-outlet>
+    </div>
+</div>
